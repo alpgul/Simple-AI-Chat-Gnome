@@ -2,7 +2,7 @@
 
     reffile=penguin-ai-chatbot.pot
     xgettext --from-code=UTF-8 --output=../po/"$reffile" ../*.js  ../lib/*.js ../schemas/*.xml
-    cd po
+    cd ../po
     for pofile in *.po
       do
         echo "Updating: $pofile"

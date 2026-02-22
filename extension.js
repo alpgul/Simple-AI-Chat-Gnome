@@ -72,10 +72,10 @@ const Penguin = GObject.registerClass(
         if (event.get_button() === Clutter.BUTTON_MIDDLE) {
           this._openSettings();
           this.menu.close();
-          this._chatLabel?.set_text(
-            this._settingsManager.getLLMProvider().toUpperCase(),
-          );
         }
+        this._chatLabel?.set_text(
+          this._settingsManager.getLLMProvider().toUpperCase(),
+        );
         return Clutter.EVENT_STOP;
       });
     }

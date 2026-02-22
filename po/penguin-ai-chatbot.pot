@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-07 15:27+0100\n"
+"POT-Creation-Date: 2026-02-10 17:36+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,291 +21,34 @@ msgstr ""
 msgid "Penguin: AI Chatbot"
 msgstr ""
 
-#: ../prefs.js:45
-msgid "Settings:"
-msgstr ""
-
-#: ../prefs.js:122
-msgid "Choose LLM Provider:"
-msgstr ""
-
-#: ../prefs.js:124
-msgid "Select the Large Language Model (LLM) provider you want to use."
-msgstr ""
-
-#: ../prefs.js:128
-msgid "Anthropic"
-msgstr ""
-
-#: ../prefs.js:129
-msgid "OpenAI"
-msgstr ""
-
-#: ../prefs.js:130
-msgid "Gemini"
-msgstr ""
-
-#: ../prefs.js:131
-msgid "OpenRouter"
-msgstr ""
-
-#: ../prefs.js:168
-msgid "Anthropic API Key:"
-msgstr ""
-
-#: ../prefs.js:170
-msgid "Enter your Anthropic API key here."
-msgstr ""
-
-#: ../prefs.js:177
-msgid "Paste your Anthropic API key"
-msgstr ""
-
-#: ../prefs.js:181
-msgid "Get Anthropic API Key"
-msgstr ""
-
-#: ../prefs.js:187
-msgid "OpenAI API Key:"
-msgstr ""
-
-#: ../prefs.js:189
-msgid "Enter your OpenAI API key here."
-msgstr ""
-
-#: ../prefs.js:196
-msgid "Paste your OpenAI API key"
-msgstr ""
-
-#: ../prefs.js:200
-msgid "Get OpenAI API Key"
-msgstr ""
-
-#: ../prefs.js:206
-msgid "Gemini API Key:"
-msgstr ""
-
-#: ../prefs.js:208
-msgid "Enter your Gemini API key here."
-msgstr ""
-
-#: ../prefs.js:215
-msgid "Paste your Gemini API key"
-msgstr ""
-
-#: ../prefs.js:219
-msgid "Get Gemini API Key"
-msgstr ""
-
-#: ../prefs.js:225
-msgid "OpenRouter API Key:"
-msgstr ""
-
-#: ../prefs.js:227
-msgid "Enter your OpenRouter API key here."
-msgstr ""
-
-#: ../prefs.js:234
-msgid "Paste your OpenRouter API key"
-msgstr ""
-
-#: ../prefs.js:238
-msgid "Get OpenRouter API Key"
-msgstr ""
-
-#: ../prefs.js:267
-msgid "Anthropic Model:"
-msgstr ""
-
-#: ../prefs.js:269
-msgid "Specify the Anthropic model you want to use. Example: claude-v1.3"
-msgstr ""
-
-#: ../prefs.js:275
-msgid "e.g., claude-v1.3"
-msgstr ""
-
-#: ../prefs.js:279
-msgid "Available Anthropic Models"
-msgstr ""
-
-#: ../prefs.js:285
-msgid "OpenAI Model:"
-msgstr ""
-
-#: ../prefs.js:287
-msgid "Specify the OpenAI model you want to use. Example: gpt-3.5-turbo"
-msgstr ""
-
-#: ../prefs.js:293
-msgid "e.g., gpt-3.5-turbo"
-msgstr ""
-
-#: ../prefs.js:297
-msgid "Available OpenAI Models"
-msgstr ""
-
-#: ../prefs.js:303
-msgid "Gemini Model:"
-msgstr ""
-
-#: ../prefs.js:305
-msgid "Specify the Gemini model you want to use. Example: gemini-1.0-pro"
-msgstr ""
-
-#: ../prefs.js:311
-msgid "e.g., gemini-1.0-pro"
-msgstr ""
-
-#: ../prefs.js:315
-msgid "Available Gemini Models"
-msgstr ""
-
-#: ../prefs.js:321
-msgid "OpenRouter Model:"
-msgstr ""
-
-#: ../prefs.js:323
-msgid ""
-"Specify the OpenRouter model you want to use. Example: meta-llama/"
-"llama-3.3-70b-instruct:free"
-msgstr ""
-
-#: ../prefs.js:329
-msgid "e.g., meta-llama/llama-3.3-70b-instruct:free"
-msgstr ""
-
-#: ../prefs.js:333
-msgid "Available OpenRouter Models"
-msgstr ""
-
-#: ../prefs.js:367
-msgid "Your Message Background Color:"
-msgstr ""
-
-#: ../prefs.js:369
-msgid "Select the background color for your messages."
-msgstr ""
-
-#: ../prefs.js:383
-msgid "Your Message Text Color:"
-msgstr ""
-
-#: ../prefs.js:385
-msgid "Select the text color for your messages."
-msgstr ""
-
-#: ../prefs.js:399
-msgid "Chatbot Message Background Color:"
-msgstr ""
-
-#: ../prefs.js:401
-msgid "Select the background color for the chatbot's messages."
-msgstr ""
-
-#: ../prefs.js:415
-msgid "Chatbot Message Text Color:"
-msgstr ""
-
-#: ../prefs.js:417
-msgid "Select the text color for the chatbot's messages."
-msgstr ""
-
-#: ../prefs.js:448
-msgid "Tool Server URL:"
-msgstr ""
-
-#: ../prefs.js:450
-#: ../schemas/org.gnome.shell.extensions.penguin-ai-chatbot.gschema.xml:100
-msgid ""
-"URL of the local tool server for function calling (weather, search, system "
-"info)."
-msgstr ""
-
-#: ../prefs.js:455
-msgid "e.g., http://127.0.0.1:5000"
-msgstr ""
-
-#: ../prefs.js:460
-msgid "Weather Latitude:"
-msgstr ""
-
-#: ../prefs.js:462
-msgid "Latitude coordinate for weather queries."
-msgstr ""
-
-#: ../prefs.js:467
-msgid "e.g., 52.52"
-msgstr ""
-
-#: ../prefs.js:472
-msgid "Weather Longitude:"
-msgstr ""
-
-#: ../prefs.js:474
-msgid "Longitude coordinate for weather queries."
-msgstr ""
-
-#: ../prefs.js:479
-msgid "e.g., 13.41"
-msgstr ""
-
-#: ../prefs.js:499
-msgid "Open Chat Shortcut:"
-msgstr ""
-
-#: ../prefs.js:501
-msgid "Set the keyboard shortcut to open the chat window."
-msgstr ""
-
-#: ../prefs.js:511 ../prefs.js:539
-msgid "Change"
-msgstr ""
-
-#: ../prefs.js:522
-msgid "Press new shortcut..."
-msgstr ""
-
-#: ../prefs.js:561 ../lib/constants.js:57
-msgid "Save Preferences"
-msgstr ""
-
-#: ../prefs.js:565 ../prefs.js:624 ../lib/constants.js:58
-msgid "Click 'Save Preferences' to apply your changes."
-msgstr ""
-
-#: ../prefs.js:620 ../lib/constants.js:56
-msgid "Preferences Saved"
-msgstr ""
-
-#: ../lib/constants.js:44
+#: ../extension.js:429
 msgid "Chat with me"
 msgstr ""
 
-#: ../lib/constants.js:45
+#: ../extension.js:430
 msgid "I am thinking..."
 msgstr ""
 
-#: ../lib/constants.js:46
+#: ../extension.js:431
 msgid "Create a new conversation (Deletes current)"
 msgstr ""
 
-#: ../lib/constants.js:47
+#: ../extension.js:432
 msgid "Click on text to copy"
 msgstr ""
 
-#: ../lib/constants.js:48
+#: ../extension.js:433
 msgid "Loading history..."
 msgstr ""
 
-#: ../lib/constants.js:50
+#: ../extension.js:435
 msgid ""
 "Hmm, an error occurred when trying to reach out to the assistant.\n"
 "Check your API key and model settings for {0} and try again. It could also "
 "be your internet connection!"
 msgstr ""
 
-#: ../lib/constants.js:53
+#: ../extension.js:438
 msgid ""
 "We are having trouble getting a response from the assistant. \n"
 "Here is the error - if it helps at all: \n"
@@ -318,8 +61,230 @@ msgid ""
 "- If you recently changed your provider, try deleting your history."
 msgstr ""
 
-#: ../lib/constants.js:55
+#: ../extension.js:441
 msgid "Click here to go to settings"
+msgstr ""
+
+#: ../extension.js:442 ../prefs.js:600
+msgid "Preferences Saved"
+msgstr ""
+
+#: ../extension.js:443 ../prefs.js:505 ../prefs.js:604
+msgid "Save Preferences"
+msgstr ""
+
+#: ../extension.js:445 ../prefs.js:619 ../prefs.js:624
+msgid "Click 'Save Preferences' to apply your changes."
+msgstr ""
+
+#: ../prefs.js:143
+msgid "Choose LLM Provider:"
+msgstr ""
+
+#: ../prefs.js:145
+msgid "Select the Large Language Model (LLM) provider you want to use."
+msgstr ""
+
+#: ../prefs.js:150
+msgid "Anthropic"
+msgstr ""
+
+#: ../prefs.js:151
+msgid "OpenAI"
+msgstr ""
+
+#: ../prefs.js:152
+msgid "Gemini"
+msgstr ""
+
+#: ../prefs.js:153
+msgid "OpenRouter"
+msgstr ""
+
+#: ../prefs.js:182
+msgid "Anthropic API Key:"
+msgstr ""
+
+#: ../prefs.js:185
+msgid "Enter your Anthropic API key here."
+msgstr ""
+
+#: ../prefs.js:191
+msgid "Get Anthropic API Key"
+msgstr ""
+
+#: ../prefs.js:197
+msgid "OpenAI API Key:"
+msgstr ""
+
+#: ../prefs.js:199
+msgid "Enter your OpenAI API key here."
+msgstr ""
+
+#: ../prefs.js:203
+msgid "Get OpenAI API Key"
+msgstr ""
+
+#: ../prefs.js:209
+msgid "Gemini API Key:"
+msgstr ""
+
+#: ../prefs.js:212
+msgid "Enter your Gemini API key here."
+msgstr ""
+
+#: ../prefs.js:217
+msgid "Get Gemini API Key"
+msgstr ""
+
+#: ../prefs.js:223
+msgid "OpenRouter API Key:"
+msgstr ""
+
+#: ../prefs.js:227
+msgid "Enter your OpenRouter API key here."
+msgstr ""
+
+#: ../prefs.js:233
+msgid "Get OpenRouter API Key"
+msgstr ""
+
+#: ../prefs.js:246
+msgid "Anthropic Model:"
+msgstr ""
+
+#: ../prefs.js:249
+msgid "Specify the Anthropic model you want to use. Example: claude-v1.3"
+msgstr ""
+
+#: ../prefs.js:255
+msgid "Available Anthropic Models"
+msgstr ""
+
+#: ../prefs.js:261
+msgid "OpenAI Model:"
+msgstr ""
+
+#: ../prefs.js:264
+msgid "Specify the OpenAI model you want to use. Example: gpt-3.5-turbo"
+msgstr ""
+
+#: ../prefs.js:270
+msgid "Available OpenAI Models"
+msgstr ""
+
+#: ../prefs.js:276
+msgid "Gemini Model:"
+msgstr ""
+
+#: ../prefs.js:279
+msgid "Specify the Gemini model you want to use. Example: gemini-1.0-pro"
+msgstr ""
+
+#: ../prefs.js:285
+msgid "Available Gemini Models"
+msgstr ""
+
+#: ../prefs.js:291
+msgid "OpenRouter Model:"
+msgstr ""
+
+#: ../prefs.js:295
+msgid ""
+"Specify the OpenRouter model you want to use. Example: meta-llama/"
+"llama-3.3-70b-instruct:free"
+msgstr ""
+
+#: ../prefs.js:302
+msgid "Available OpenRouter Models"
+msgstr ""
+
+#: ../prefs.js:319
+msgid "Your Message Background Color:"
+msgstr ""
+
+#: ../prefs.js:320 ../prefs.js:323
+msgid "Select the background color for your messages."
+msgstr ""
+
+#: ../prefs.js:337
+msgid "Your Message Text Color:"
+msgstr ""
+
+#: ../prefs.js:338 ../prefs.js:341
+msgid "Select the text color for your messages."
+msgstr ""
+
+#: ../prefs.js:356
+msgid "Chatbot Message Background Color:"
+msgstr ""
+
+#: ../prefs.js:357 ../prefs.js:360
+msgid "Select the background color for the chatbot's messages."
+msgstr ""
+
+#: ../prefs.js:375
+msgid "Chatbot Message Text Color:"
+msgstr ""
+
+#: ../prefs.js:376 ../prefs.js:379
+msgid "Select the text color for the chatbot's messages."
+msgstr ""
+
+#: ../prefs.js:399
+msgid "Tool Server URL:"
+msgstr ""
+
+#: ../prefs.js:403
+#: ../schemas/org.gnome.shell.extensions.penguin-ai-chatbot.gschema.xml:100
+msgid ""
+"URL of the local tool server for function calling (weather, search, system "
+"info)."
+msgstr ""
+
+#: ../prefs.js:411
+msgid "Weather Latitude:"
+msgstr ""
+
+#: ../prefs.js:414
+msgid "Latitude coordinate for weather queries."
+msgstr ""
+
+#: ../prefs.js:421
+msgid "Weather Longitude:"
+msgstr ""
+
+#: ../prefs.js:424
+msgid "Longitude coordinate for weather queries."
+msgstr ""
+
+#: ../prefs.js:436
+msgid "Open Chat Shortcut:"
+msgstr ""
+
+#: ../prefs.js:438
+msgid ""
+"Click on the row to set a keyboard shortcut for opening the chat window."
+msgstr ""
+
+#: ../prefs.js:442
+msgid "Set the keyboard shortcut to open the chat window."
+msgstr ""
+
+#: ../prefs.js:459
+msgid "New shortcut"
+msgstr ""
+
+#: ../prefs.js:617
+msgid "Settings:"
+msgstr ""
+
+#: ../prefs.js:621
+msgid "Shortcut:"
+msgstr ""
+
+#: ../prefs.js:622
+msgid "Colors:"
 msgstr ""
 
 #: ../schemas/org.gnome.shell.extensions.penguin-ai-chatbot.gschema.xml:9
