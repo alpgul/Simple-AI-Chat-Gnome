@@ -1,4 +1,5 @@
 markdown
+
 # Penguin AI Chatbot - Local Tool Server
 
 This tool server enables Function Calling capabilities for the Penguin AI Chatbot GNOME Shell Extension. It provides local tools that the LLM can invoke to retrieve real-time information.
@@ -46,14 +47,15 @@ pip install -r requirements.txt
 The `/search` endpoint requires a running SearXNG instance. You can:
 
 **Option A: Use a public instance**
-- Modify `server.py` line with SearXNG URL to point to a public instance
+
+- Modify `config.yml` line with SearXNG URL to point to a public instance
 
 **Option B: Self-host with Docker Compose**
 
 Create `docker-compose.yml`:
 
 ```yaml
-version: '3.7'
+version: "3.7"
 services:
   searxng:
     image: searxng/searxng:latest
@@ -82,7 +84,7 @@ Start SearXNG:
 docker compose up -d
 ```
 
-Update `server.py` with your SearXNG URL (default: `http://localhost:8888`).
+Update `config.yml` with your SearXNG URL (default: `http://localhost:8888`).
 
 ## Running the Server
 
@@ -93,7 +95,7 @@ source venv/bin/activate
 python server.py
 ```
 
-The server will start on `http://127.0.0.1:5000` by default.
+The server will start on `http://127.0.0.1:5000` by default. Can be changed in config.yml.
 
 ### Automatic Start with systemd
 
@@ -145,6 +147,7 @@ systemctl --user status gnome-ai-toolserver.service
 Health check endpoint.
 
 **Response:**
+
 ```json
 {
   "status": "ok",
@@ -157,6 +160,7 @@ Health check endpoint.
 Returns current date and time.
 
 **Response:**
+
 ```json
 {
   "datetime": "2025-11-29T14:50:10.077031",
@@ -171,15 +175,18 @@ Returns current date and time.
 Returns current weather information for configured location.
 
 **Query Parameters:**
+
 - `lat` (required) - Latitude
 - `lon` (required) - Longitude
 
 **Example:**
+
 ```
 GET /weather?lat=52.52&lon=13.41
 ```
 
 **Response:**
+
 ```json
 {
   "temperature": 7.8,
@@ -196,14 +203,17 @@ GET /weather?lat=52.52&lon=13.41
 Performs web search via SearXNG.
 
 **Query Parameters:**
+
 - `q` (required) - Search query
 
 **Example:**
+
 ```
 GET /search?q=GNOME+Shell
 ```
 
 **Response:**
+
 ```json
 {
   "results": [
@@ -221,6 +231,7 @@ GET /search?q=GNOME+Shell
 Returns comprehensive system information.
 
 **Response:**
+
 ```json
 {
   "hostname": "my-computer",
@@ -255,15 +266,18 @@ After starting the tool server, configure the GNOME Shell Extension:
 ## Troubleshooting
 
 ### Server won't start
+
 - Ensure virtual environment is activated: `source venv/bin/activate`
 - Check if port 5000 is already in use: `lsof -i :5000`
 - Check logs: `journalctl --user -u gnome-ai-toolserver.service -f`
 
 ### Weather endpoint returns 400
+
 - Verify latitude and longitude are configured in Extension preferences
 - Test manually: `curl "http://127.0.0.1:5000/weather?lat=52.52&lon=13.41"`
 
 ### Search endpoint fails
+
 - Ensure SearXNG is running and accessible
 - Check SearXNG URL in `server.py`
 - Verify JSON format is enabled in SearXNG settings
