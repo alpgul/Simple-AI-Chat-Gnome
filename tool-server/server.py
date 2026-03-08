@@ -1,12 +1,27 @@
 from flask import Flask, jsonify, request
 from datetime import datetime
+import os
+import platform
 import psutil
 import subprocess
-import platform
 from duckduckgo_search import DDGS
 import requests
+import yaml
 
 app = Flask(__name__)
+CONFIG_PATH = os.path.join(os.path.dirname(__file__), 'config.yml')
+
+
+def load_config():
+    with open(CONFIG_PATH, 'r', encoding='utf-8') as config_file:
+        data = yaml.safe_load(config_file) or {}
+
+    host = data.get('host', '127.0.0.1')
+    port = int(data.get('port', 5000))
+    debug = data.get('debug', True)
+    searxng_url = data.get('searxng_url', 'http://127.0.0.1:8888/search')
+
+    return [host, port, debug], searxng_url
 
 @app.route('/health', methods=['GET'])
 def health_check():
@@ -59,7 +74,7 @@ def web_search():
     
     try:
         # SearXNG API nutzen
-        searxng_url = 'http://192.168.61.112:8888/search'
+        _, searxng_url = load_config()
         params = {
             'q': query,
             'format': 'json',
@@ -151,4 +166,6 @@ def system_info():
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=5000, debug=True)
+    server_config, _ = load_config()
+    host, port, debug = server_config
+    app.run(host=host, port=port, debug=debug)

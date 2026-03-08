@@ -1,0 +1,4 @@
+host: 127.0.0.1
+port: 5000
+debug: True
+searxng_url: http://localhost:8888/search
