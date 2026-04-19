@@ -1,0 +1,6 @@
+# Ignore build outputs and external files
+node_modules/
+*.md
+schemas/gschemas.compiled
+*.yml
+md2pango.js
