@@ -40,7 +40,6 @@ const isValidAccel$1 = (mask, keyval) => {
   );
 };
 
-// eslint-disable-next-line complexity
 const isValidBinding$1 = (mask, keycode, keyval) => {
   return !(
     mask === 0 ||
@@ -472,7 +471,6 @@ export default class PenguinPreferences extends ExtensionPreferences {
         content,
       });
       editor.add_controller(ctl);
-      // eslint-disable-next-line no-shadow
       ctl.connect("key-pressed", (_, keyval, keycode, state) => {
         let mask = state & Gtk.accelerator_get_default_mod_mask();
         mask &= ~Gdk.ModifierType.LOCK_MASK;
