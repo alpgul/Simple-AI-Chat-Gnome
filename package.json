@@ -9,7 +9,11 @@
     "install-ext": "gnome-extensions install penguin-ai-chatbot@coffeecionado.gitlab.io.shell-extension.zip --force",
     "enable": "dbus-run-session -- gnome-extensions enable penguin-ai-chatbot@coffeecionado.gitlab.io",
     "run": "dbus-run-session -- gnome-shell --nested --wayland",
-    "clean": "rm -f penguin-ai-chatbot@coffeecionado.gitlab.io.shell-extension.zip; rm -f schemas/gschemas.compiled"
+    "clean": "rm -f penguin-ai-chatbot@coffeecionado.gitlab.io.shell-extension.zip; rm -f schemas/gschemas.compiled",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "devDependencies": {
     "@girs/adw-1": "^1.7.0-4.0.0-beta.19",
@@ -22,6 +26,8 @@
     "@girs/shell-15": "^15.0.0-4.0.0-beta.19",
     "@girs/soup-3.0": "^3.6.0-4.0.0-beta.19",
     "@girs/st-15": "^15.0.0-4.0.0-beta.19",
-    "eslint": "^8.18.0"
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0"
   }
 }
